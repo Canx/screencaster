@@ -15,4 +15,4 @@ done
 
 zenity --info --text "Preparate para grabar!"
 
-/usr/bin/ffmpeg -f x11grab -s "1920x1080" -i ${DISPLAY} -r ${framerate} -f pulse -ac 2 -i default ${filename}
+/usr/bin/ffmpeg -f x11grab -thread_queue_size 512 -s ${size} -i ${DISPLAY} -r ${framerate} -f pulse -ac 2 -i default ${filename}
