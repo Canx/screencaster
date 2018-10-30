@@ -4,7 +4,7 @@ size=$(xwininfo -root | grep "geometry" | tr -s ' ' | cut -d ' ' -f 3 | cut -d '
 font="/usr/share/fonts/truetype/ubuntu/Ubuntu-C.ttf"
 name="salida"
 ext="mp4"
-framerate=24
+framerate=10
 
 i=1
 filename="${name}.${ext}"
